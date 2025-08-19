@@ -9,19 +9,19 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'adios' });
 });
 
-app.get('/info', (req, res) => {
+router.get('/info', (req, res) => {
   res.send('Esta es una request de GET')
 })
 
-app.post('/', (req, res) => {
+router.post('/nuevo', (req, res) => {
   res.send('Esto es una POST request')
 })
 
-app.put('/user', (req, res) => {
+router.put('/hola', (req, res) => {
   res.send('Esto es una PUT request en user')
 })
 
-app.delete('/user', (req, res) => {
+router.delete('/adios', (req, res) => {
   res.send('Esto es una DELETE request en user')
 })
 
